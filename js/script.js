@@ -31,7 +31,10 @@ btnSearch.addEventListener('click', function (){
     document.querySelector('.header__search-mob').classList.add('active');
     this.classList.add('active');
     document.querySelector('.header__nav').classList.remove('header__nav-active');
-    burger.classList.remove('burger__active');
+    if (burger.classList.contains('burger__active')) {
+      burger.classList.remove('burger__active');
+      document.body.classList.toggle('stop-scroll')
+    }
   }
 });
 
@@ -84,4 +87,30 @@ validation
       },
     ],
   )
+
+
+/**
+ * Scroll by link
+ * @type {NodeListOf<Element>}
+ */
+let navLink = document.querySelectorAll('.nav__link-item');
+
+navLink.forEach((link) => {
+  link.addEventListener('click', (e) => {
+    e.preventDefault();
+    let href = link.getAttribute('href').substring(1);
+    const scrollTarget = document.getElementById(href);
+    if (scrollTarget && document.querySelector('.burger__active')) {
+      document.querySelector('.burger').click();
+    }
+    const topOffset = 0;
+    const elementPosition = scrollTarget.getBoundingClientRect().top;
+    const offsetPosition = elementPosition - topOffset;
+
+    window.scrollBy({
+      top: offsetPosition,
+      behavior: 'smooth'
+    });
+  });
+});
 

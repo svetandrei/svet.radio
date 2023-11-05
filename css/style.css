@@ -425,6 +425,9 @@ picture {
   margin-right: 30px;
   line-height: 0;
 }
+.podcasts__item-preview img {
+  object-fit: contain;
+}
 .podcasts__item-label {
   position: absolute;
   left: 0;
