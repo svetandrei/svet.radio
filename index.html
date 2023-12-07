@@ -21,11 +21,9 @@
         <span class="burger__line"></span>
         <span class="burger__line"></span>
       </button>
-      <div class="header__logo">
-        <a href="#" class="logo" aria-label="W-Wave Radio" tabindex="0">
-          <img src="images/logo.svg" alt="W-Wave Radio">
-        </a>
-      </div>
+      <a href="#" class="header__logo" aria-label="W-Wave Radio" tabindex="0">
+        <img src="images/logo.svg" alt="W-Wave Radio" class="logo">
+      </a>
       <nav class="header__nav nav" title="Главное меню">
         <ul class="nav__menu flex list-reset">
           <li class="nav__item">
@@ -87,7 +85,7 @@
   </header>
   <main class="main">
     <section class="cover" tabindex="0">
-      <div class="container flex">
+      <div class="container cover__image flex">
           <div class="cover__content flex">
             <h1 class="cover__title">
               Радио <em>W-Wave</em>
@@ -99,7 +97,6 @@
               Слушать эфир
             </button>
           </div>
-          <img class="cover__image" src="images/programs/microphone.png" alt="">
       </div>
     </section>
     <section class="podcasts section indents" id="podcasts" tabindex="0">
@@ -187,9 +184,9 @@
             <div class="podcasts__item-preview">
               <span class="podcasts__item-label">28&nbsp;мая</span>
               <picture>
-                <source media="(min-width: 768px)" srcset="images/podcasts/podcasts_europa.jpg 1x">
-                <source media="(min-width: 320px)" srcset="images/podcasts/podcasts_europa_320.jpg 1x">
-                <img src="images/podcasts/podcasts_europa.jpg" alt="Европа. XIX век">
+                <source media="(min-width: 768px)" srcset="images/podcasts/podcasts_color.jpg 1x">
+                <source media="(min-width: 320px)" srcset="images/podcasts/podcasts_color_320.jpg 1x">
+                <img src="images/podcasts/podcasts_color.jpg" alt="Физика цвета">
               </picture>
             </div>
             <div class="podcasts__item-block flex">
@@ -238,7 +235,7 @@
             Передачи
           </h2>
           <div class="section__left-bottom flex">
-            <img src="images/programs/mic.png" alt="Архив" class="programs__mic">
+            <div class="section__left-decor"></div>
             <button class="btn btn-border programs__btn btn-reset">Архив</button>
             <p class="section__desc">
               В&nbsp;архив попадают все передачи, которые вы&nbsp;пропустили! Enjoy:)
@@ -248,9 +245,11 @@
         <div class="section__right">
           <ul class="section__list list-reset flex">
             <li class="section__item flex">
-              <div class="programs__preview">
-                <img src="images/programs/programs_people.jpg" alt="О&nbsp;людях и&nbsp;книгах">
-              </div>
+              <picture>
+                <source media="(min-width: 768px)" srcset="images/programs/programs_people.jpg 1x">
+                <source media="(min-width: 320px)" srcset="images/programs/programs_people_320.jpg 1x">
+                <img src="images/programs/programs_people.jpg" alt="О&nbsp;людях и&nbsp;книгах" class="programs__preview">
+              </picture>
               <div class="section__item-block flex">
                 <h3 class="section__item-title">О&nbsp;людях и&nbsp;книгах</h3>
                 <p class="section__item-desc">Анонсируется отдельно</p>
@@ -263,9 +262,11 @@
               </div>
             </li>
             <li class="section__item flex">
-              <div class="programs__preview">
-                <img src="images/programs/programs_td.jpg" alt="Графомания td">
-              </div>
+              <picture>
+                <source media="(min-width: 768px)" srcset="images/programs/programs_td.jpg 1x">
+                <source media="(min-width: 320px)" srcset="images/programs/programs_td_320.jpg 1x">
+                <img src="images/programs/programs_td.jpg" alt="Графомания td" class="programs__preview">
+              </picture>
               <div class="section__item-block flex">
                 <h3 class="section__item-title">Графомания td</h3>
                 <p class="section__item-desc">По&nbsp;понедельникам в&nbsp;10:00</p>
@@ -278,9 +279,11 @@
               </div>
             </li>
             <li class="section__item flex">
-              <div class="programs__preview">
-                <img src="images/programs/programs_rome.jpg" alt="Не&nbsp;Рим, не&nbsp;Троя">
-              </div>
+              <picture>
+                <source media="(min-width: 768px)" srcset="images/programs/programs_rome.jpg 1x">
+                <source media="(min-width: 320px)" srcset="images/programs/programs_rome_320.jpg 1x">
+                <img src="images/programs/programs_rome.jpg" alt="Не&nbsp;Рим, не&nbsp;Троя" class="programs__preview">
+              </picture>
               <div class="section__item-block flex">
                 <h3 class="section__item-title">Не&nbsp;Рим, не&nbsp;Троя</h3>
                 <p class="section__item-desc">По&nbsp;вторникам в&nbsp;12:00</p>
@@ -293,9 +296,11 @@
               </div>
             </li>
             <li class="section__item flex">
-              <div class="programs__preview">
-                <img src="images/programs/programs_erudite.jpg" alt="Эрудит">
-              </div>
+              <picture>
+                <source media="(min-width: 768px)" srcset="images/programs/programs_rome.jpg 1x">
+                <source media="(min-width: 320px)" srcset="images/programs/programs_rome_320.jpg 1x">
+                <img src="images/programs/programs_erudite.jpg" alt="Эрудит" class="programs__preview">
+              </picture>
               <div class="section__item-block flex">
                 <h3 class="section__item-title">Эрудит</h3>
                 <p class="section__item-desc">По пятницам в&nbsp;17:00</p>
@@ -308,9 +313,11 @@
               </div>
             </li>
             <li class="section__item flex">
-              <div class="programs__preview">
-                <img src="images/programs/programs_epoch.jpg" alt="Тонкости эпох">
-              </div>
+              <picture>
+                <source media="(min-width: 768px)" srcset="images/programs/programs_epoch.jpg 1x">
+                <source media="(min-width: 320px)" srcset="images/programs/programs_epoch_320.jpg 1x">
+                <img src="images/programs/programs_epoch.jpg" alt="Тонкости эпох" class="programs__preview">
+              </picture>
               <div class="section__item-block flex">
                 <h3 class="section__item-title">Тонкости эпох</h3>
                 <p class="section__item-desc">По&nbsp;субботам в&nbsp;10:00</p>
@@ -323,9 +330,11 @@
               </div>
             </li>
             <li class="section__item flex">
-              <div class="programs__preview">
-                <img src="images/programs/programs_minds.jpg" alt="Живые мысли">
-              </div>
+              <picture>
+                <source media="(min-width: 768px)" srcset="images/programs/programs_minds.jpg 1x">
+                <source media="(min-width: 320px)" srcset="images/programs/programs_minds_320.jpg 1x">
+                <img src="images/programs/programs_minds.jpg" alt="Живые мысли" class="programs__preview">
+              </picture>
               <div class="section__item-block flex">
                 <h3 class="section__item-title">Живые мысли</h3>
                 <p class="section__item-desc">По&nbsp;воскресеньям в&nbsp;15:30</p>
@@ -341,12 +350,8 @@
         </div>
       </div>
       <div class="section__bottom m-show flex">
-        <div class="section__archive">
-          <picture class="programs__mic">
-            <source media="(min-width: 768px)" srcset="images/programs/mic.png 1x">
-            <source media="(min-width: 320px)" srcset="images/programs/mic_320.png 1x">
-            <img src="images/programs/mic.png" alt="Архив">
-          </picture>
+        <div class="section__archive flex">
+          <div class="section__bottom-decor"></div>
           <div class="section__archive-content flex">
             <button class="btn btn-border programs__btn btn-reset">Архив</button>
             <p class="section__desc">
@@ -615,7 +620,7 @@
                     <path d="M-4 4.8V7.2H19.8217V4.8H-4ZM6.71974 0V12H9.10191V0H6.71974ZM-4 12L3.93977 7.99922H5.71709L-2.22501 12H-4ZM-4 0L3.93977 4.00078H2.16478L-4 0.895313V0ZM10.1069 4.00078L18.0467 0H19.8217L11.8819 4.00078H10.1069ZM19.8217 12L11.8819 7.99922H13.6569L19.8217 11.1047V12Z" fill="#D52B1E"/>
                   </svg>
                 </span>
-                <img class="section__preview" src="images/playlists/playlist_human.jpg" alt="Human Tetris">
+                <img class="section__preview" src="images/playlists/playlist_gang.jpg" alt="Gang Of&nbsp;Four">
               </div>
               <div class="section__item-block flex">
                 <h3 class="section__item-title">Gang Of&nbsp;Four</h3>
@@ -628,9 +633,7 @@
     </section>
     <section class="wave section indents" id="about" tabindex="0">
       <div class="container flex">
-        <div class="wave__left">
-          <img src="images/w_wave.png" alt="Будь с&nbsp;нами на&nbsp;одной волне!">
-        </div>
+        <div class="wave__left-decor"></div>
         <div class="wave__right flex">
           <h2 class="section__title">
             Будь с&nbsp;нами на&nbsp;одной волне!
@@ -645,7 +648,7 @@
           <p class="wave__price">
             2&nbsp;800&nbsp;₽
           </p>
-          <button class="btn btn-border wave__btn btn-reset flex">
+          <a href="https://market.yandex.ru/" target="_blank" class="btn btn-border wave__btn btn-reset flex">
             <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
               <g clip-path="url(#clip0_117207_385)">
                 <path d="M10.5 20C16.0228 20 20.5 15.5228 20.5 9.99998C20.5 4.47714 16.0228 0 10.5 0C4.97724 0 0.5 4.47714 0.5 9.99998C0.5 15.5228 4.97724 20 10.5 20Z" fill="#F0D288"/>
@@ -658,24 +661,22 @@
               </defs>
             </svg>
             Купить на&nbsp;Яндекс.Маркет
-          </button>
+          </a>
         </div>
       </div>
     </section>
     <section class="about section indents">
       <div class="container">
-        <div class="about__content">
-          <div class="about__left flex">
-            <h2 class="section__title">О нас</h2>
-            <p class="about__desc">
-              <strong>Приём-приём! Как слышно? Мы&nbsp;уже в&nbsp;эфире? Отлично, поехали!</strong>
-            </p>
-            <p class="about__desc">
-              Друзья, мы&nbsp;будем очень рады, если вы&nbsp;поможете стать нам лучше.
-              Нам важен каждый слушатель, поэтому вы&nbsp;можете поделиться обратной связью о&nbsp;наших предеачах, темах, подборках и&nbsp;вообще обо всём!
-              Это можно сделать либо написав нам в&nbsp;форме ниже, либо кликнув на&nbsp;наши соцсети в&nbsp;подвале сайта. Спасибо! Услышимся!:)
-            </p>
-          </div>
+        <div class="about__content flex">
+          <h2 class="section__title">О нас</h2>
+          <p class="about__desc">
+            <strong>Приём-приём! Как слышно? Мы&nbsp;уже в&nbsp;эфире? Отлично, поехали!</strong>
+          </p>
+          <p class="about__desc">
+            Друзья, мы&nbsp;будем очень рады, если вы&nbsp;поможете стать нам лучше.
+            Нам важен каждый слушатель, поэтому вы&nbsp;можете поделиться обратной связью о&nbsp;наших предеачах, темах, подборках и&nbsp;вообще обо всём!
+            Это можно сделать либо написав нам в&nbsp;форме ниже, либо кликнув на&nbsp;наши соцсети в&nbsp;подвале сайта. Спасибо! Услышимся!:)
+          </p>
         </div>
         <div class="about__lines decor flex">
           <div class="about__decor decor__one"></div>
